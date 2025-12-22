@@ -1,11 +1,20 @@
 {
-  "name": "personal-life-os",
+  "name": "personal-os",
   "version": "1.0.0",
-  "description": "A personal operating system for learning, habits, and health",
+  "private": true,
+  "description": "A personal operating system for habits, learning, health, journaling, and reports",
   "scripts": {
-    "start": "npx serve .",
-    "lint": "echo \"Add ESLint later\""
+    "dev": "python -m http.server 8000",
+    "start": "python -m http.server 8000"
   },
-  "author": "Sreeju",
+  "keywords": [
+    "pwa",
+    "vanilla-js",
+    "personal-dashboard",
+    "habit-tracker",
+    "learning-tracker",
+    "health-tracker"
+  ],
+  "author": "Sreeja",
   "license": "MIT"
 }
