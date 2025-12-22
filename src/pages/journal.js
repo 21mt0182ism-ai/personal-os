@@ -8,7 +8,7 @@ import { today } from "../utils/date.js";
 // --------------------
 const user = getUser();
 if (!user) {
-  window.location.href = "/public/login.html";
+  window.location.href = "./login.html";
 }
 
 // --------------------

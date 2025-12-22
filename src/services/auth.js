@@ -9,7 +9,7 @@ export function login(email, password) {
 
 export function logout() {
   removeItem("user");
-  window.location.href = "/public/login.html";
+  window.location.href = "./login.html";
 }
 
 export function getUser() {

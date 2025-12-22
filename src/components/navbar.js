@@ -9,17 +9,17 @@ export function renderNavbar(activePage) {
   nav.innerHTML = `
     <strong>Personal Life OS</strong>
     |
-    <a href="/public/dashboard.html" data-page="dashboard">Dashboard</a>
+    <a href="./dashboard.html" data-page="dashboard">Dashboard</a>
     |
-    <a href="/public/habits.html" data-page="habits">Habits</a>
+    <a href="./habits.html" data-page="habits">Habits</a>
     |
-    <a href="/public/learning.html" data-page="learning">Learning</a>
+    <a href="./learning.html" data-page="learning">Learning</a>
     |
-    <a href="/public/health.html" data-page="health">Health</a>
+    <a href="./health.html" data-page="health">Health</a>
     |
-    <a href="/public/journal.html" data-page="journal">Journal</a>
+    <a href="./journal.html" data-page="journal">Journal</a>
     |
-    <a href="/public/reports.html" data-page="reports">Reports</a>
+    <a href="./reports.html" data-page="reports">Reports</a>
     |
     <button id="logoutBtn">Logout</button>
   `;

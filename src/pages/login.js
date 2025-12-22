@@ -27,5 +27,5 @@ form.addEventListener("submit", (e) => {
 
   // ---- Login ----
   login(email, password);
-  window.location.href = "/public/dashboard.html";
+  window.location.href = "./dashboard.html";
 });
