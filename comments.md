@@ -2,28 +2,29 @@
 Locks your current working baseline
 Gives you rollback safety
 Lets you isolate PWA changes cleanly
+
 2️⃣ Convert to PWA locally
 You can:
 Inspect service worker
 Clear cache easily
 Use Chrome DevTools (Application → PWA)
 You’ll catch 90% of issues here
+
 3️⃣ Test PWA behavior locally
 Install prompt
 Offline reload
 Navigation works
 Assets load correctly
 localStorage persists
+
 4️⃣ Commit only when stable
 Your repo now contains a known-good PWA
 Vercel becomes a hosting step, not a debugging step
+
 5️⃣ Deploy to Vercel
 Minimal surprises
 Faster success
 Cleaner history
-
-
-
 
 
 Straight answer: **all your app’s data is stored in the browser’s `localStorage`**, under **one single key**.
