@@ -1,9 +1,9 @@
 import { isLoggedIn } from "../services/auth.js";
 
 if (isLoggedIn()) {
-  window.location.replace("/public/dashboard.html");
+  window.location.replace("./dashboard.html");
 } else {
-  window.location.replace("/public/login.html");
+  window.location.replace("./login.html");
 }
 
 if ("serviceWorker" in navigator) {
