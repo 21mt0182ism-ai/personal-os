@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Health | Personal Life OS</title>
+    <link rel="stylesheet" href="../src/styles/main.css" />
+    <script type="module" src="../src/pages/health.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <h1>Health</h1>
+
+    <!-- Log activity -->
+    <form id="healthForm">
+      <input
+        type="text"
+        id="activity"
+        placeholder="Activity (e.g. Swimming)"
+        required
+      />
+
+      <input
+        type="number"
+        id="duration"
+        placeholder="Duration (minutes)"
+        required
+        min="1"
+      />
+
+      <input
+        type="text"
+        id="notes"
+        placeholder="Notes (optional)"
+      />
+
+      <button type="submit">Add Activity</button>
+    </form>
+
+    <h2>Today</h2>
+    <ul id="healthList"></ul>
+  </body>
+</html>

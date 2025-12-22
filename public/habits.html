@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Habits | Personal Life OS</title>
+    <link rel="stylesheet" href="../src/styles/main.css" />
+    <script type="module" src="../src/pages/habits.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <h1>Habits</h1>
+
+    <!-- Add habit -->
+    <form id="habitForm">
+      <input
+        type="text"
+        id="habitName"
+        placeholder="New habit (e.g. Exercise)"
+        required
+      />
+      <button type="submit">Add Habit</button>
+    </form>
+
+    <h2>Today</h2>
+    <ul id="habitList"></ul>
+  </body>
+</html>

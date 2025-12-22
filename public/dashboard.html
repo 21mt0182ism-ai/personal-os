@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard | Personal Life OS</title>
+    <link rel="stylesheet" href="../src/styles/main.css" />
+    <script type="module" src="../src/pages/dashboard.js"></script>
+  </head>
+  <body>
+    <!-- Navbar will be injected here -->
+    <div id="navbar"></div>
+
+    <h1>Dashboard</h1>
+
+    <p id="date"></p>
+    <div class="dashboard-grid">
+    <section>
+      <h2>Habits</h2>
+      <p> 
+        <a href="./habits.html" id="habitSummary">No habits created yet</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Learning</h2>
+      <p>
+        <a href="./learning.html" id="learningSummary">No sessions today</a>
+      </p>
+
+    </section>
+
+    <section>
+      <h2>Health</h2>
+      <p>
+        <a href="./health.html" id="healthSummary">No activity logged</a>
+      </p>
+    </section>
+    </div>
+    <section>
+      <h2>Quick Journal</h2>
+      <textarea id="journalText" rows="4"></textarea><br />
+      <button id="saveJournal">Save</button>
+    </section>
+  </body>
+</html>

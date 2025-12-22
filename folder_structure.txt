@@ -1,0 +1,43 @@
+personal-life-os/
+│
+├── public/
+│   ├── login.html
+│   ├── dashboard.html
+│   ├── learning.html
+│   ├── habits.html
+│   ├── health.html
+│   ├── journal.html
+│   └── reports.html
+│
+├── src/
+│   ├── styles/
+│   │   └── main.css
+│
+│   ├── components/
+│   │   ├── navbar.js
+│   │   ├── modal.js
+│   │   └── chart.js
+│
+│   ├── pages/
+│   │   ├── login.js
+│   │   ├── dashboard.js
+│   │   ├── learning.js
+│   │   ├── habits.js
+│   │   ├── health.js
+│   │   ├── journal.js
+│   │   └── reports.js
+│
+│   ├── services/
+│   │   ├── auth.js
+│   │   ├── storage.js
+│   │   └── api.js
+│
+│   ├── utils/
+│   │   ├── date.js
+│   │   ├── validation.js
+│   │   └── analytics.js
+│
+│   └── main.js
+│
+├── README.md
+└── package.json

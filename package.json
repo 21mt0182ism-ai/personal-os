@@ -1,0 +1,11 @@
+{
+  "name": "personal-life-os",
+  "version": "1.0.0",
+  "description": "A personal operating system for learning, habits, and health",
+  "scripts": {
+    "start": "npx serve .",
+    "lint": "echo \"Add ESLint later\""
+  },
+  "author": "Sreeju",
+  "license": "MIT"
+}
