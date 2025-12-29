@@ -48,6 +48,12 @@ function getStreak(habitId) {
   let streak = 0;
   let date = new Date(today());
 
+  if (!todayCompleted) {
+    date.setDate(date.getDate() - 1);
+  }
+  const todayCompleted = habitLogs.some(
+    l => l.habitId === habitId && l.date === today() && l.completed
+  );
   while (true) {
     const dateStr = date.toISOString().split("T")[0];
     const log = habitLogs.find(
