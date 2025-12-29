@@ -48,19 +48,18 @@ function getStreak(habitId) {
   let streak = 0;
   let date = new Date(today());
 
-  if (!todayCompleted) {
-    date.setDate(date.getDate() - 1);
-  }
   const todayCompleted = habitLogs.some(
     l => l.habitId === habitId && l.date === today() && l.completed
   );
+
+  if (!todayCompleted) {
+    date.setDate(date.getDate() - 1);
+  }
+
   while (true) {
     const dateStr = date.toISOString().split("T")[0];
     const log = habitLogs.find(
-      (l) =>
-        l.habitId === habitId &&
-        l.date === dateStr &&
-        l.completed === true
+      l => l.habitId === habitId && l.date === dateStr && l.completed
     );
 
     if (!log) break;
@@ -91,9 +90,6 @@ function toggleHabit(habitId) {
   render();
 }
 
-// --------------------
-// Render
-// --------------------
 function render() {
   habitList.innerHTML = "";
 
@@ -121,9 +117,6 @@ function render() {
   });
 }
 
-// --------------------
-// Events
-// --------------------
 habitForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -141,7 +134,4 @@ habitForm.addEventListener("submit", (e) => {
   render();
 });
 
-// --------------------
-// Initial render
-// --------------------
 render();
